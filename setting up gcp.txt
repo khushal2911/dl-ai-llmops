@@ -1,0 +1,1 @@
+https://community.deeplearning.ai/t/setting-up-google-cloud-platform-project-and-credentials-to-use-vertex-ai/555545
