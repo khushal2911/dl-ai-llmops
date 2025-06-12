@@ -14,6 +14,7 @@ def authenticate():
         credentials.refresh(Request())
     
     #Set project ID according to environment variable    
-    PROJECT_ID = 'llmops-462607'
+    PROJECT_ID = "llmops-462607"
+    STAGING_BUCKET = "llm-ft-bucket"
         
-    return credentials, PROJECT_ID
+    return credentials, PROJECT_ID, STAGING_BUCKET
