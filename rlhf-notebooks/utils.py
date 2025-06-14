@@ -18,3 +18,14 @@ def authenticate():
     STAGING_BUCKET = "llm-ft-bucket"
         
     return credentials, PROJECT_ID, STAGING_BUCKET
+
+def print_d(d, indent=0):
+    for key, val in d.items():
+        indentation = "  " * indent
+        print(f"{indentation}" + "-"*50)
+        print(f"{indentation}key:{key}\n")
+        if isinstance(val, dict):
+            print(f"{indentation}val")
+            print_d(val,indent=indent+1)
+        else:
+            print(f"{indentation}val:{val}")
